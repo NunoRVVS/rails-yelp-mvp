@@ -1,0 +1,10 @@
+<div id="restaurants">
+  <div theadtable class="table table-striped">
+    <% @restaurants.each do |restaurant| %>
+      <%= restaurant.name %>
+      <p>
+        <%= link_to "Show this restaurant", restaurant, class: "btn btn-secondary"%>
+      </p>
+    <% end %>
+  </div>
+</div>
